@@ -13,7 +13,7 @@
 // Execute `rustlings hint intro1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 fn main() {
     println!("Hello and");
@@ -25,6 +25,7 @@ fn main() {
     println!(r#" |_|   \__,_|___/\__|_|_|_| |_|\__, |___/ "#);
     println!(r#"                               |___/      "#);
     println!();
+
     println!("This exercise compiles successfully. The remaining exercises contain a compiler");
     println!("or logic error. The central concept behind Rustlings is to fix these errors and");
     println!("solve the exercises. Good luck!");

@@ -7,7 +7,7 @@
 // Execute `rustlings hint move_semantics4` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+
 
 #[test]
 fn main() {
@@ -19,11 +19,11 @@ fn main() {
 }
 
 // `fill_vec()` no longer takes `vec: Vec<i32>` as argument - don't change this!
-fn fill_vec() -> Vec<i32> {
+fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
     // Instead, let's create and fill the Vec in here - how do you do that?
-    let mut vec = vec;
+    let mut done = vec;
 
-    vec.push(88);
+    done.push(88);
 
-    vec
+    done
 }

@@ -12,7 +12,7 @@ fn main() {
 
     let data2 = get_char(&data);
 
-    string_uppercase(data2.to_string());
+    string_uppercase(data);
 }
 
 // Should not take ownership

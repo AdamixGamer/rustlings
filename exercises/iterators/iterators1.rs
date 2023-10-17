@@ -8,7 +8,7 @@
 //
 // Execute `rustlings hint iterators1` or use the `hint` watch subcommand for a
 // hint.
-
+// data.chars().last().unwrap()
 // I AM NOT DONE
 
 #[test]

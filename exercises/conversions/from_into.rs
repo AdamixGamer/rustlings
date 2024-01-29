@@ -42,8 +42,29 @@ impl Default for Person {
 
 // I AM NOT DONE
 
+
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        
+       let mut iterator = s.split(",");
+
+       let name = match iterator.next() {
+        Some(name) if !name.is_empty() => name,
+        _ => return Person::default(),
+       };
+
+       // map(self, f: FnOnce(T) -> U) -> Option<U>
+       // and_then(self, f: FnOnce(T) -> Option<U>) -> Option<U>
+       let age = iterator.next().and_then(|age| age.parse::<usize>().ok());
+       let age = match age {
+        None => return Person::default(),
+        Some(age) => age
+       };
+
+       Person {
+        name: name.to_string(),
+        age: age,
+    }
     }
 }
 
